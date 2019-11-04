@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Muli&display=swap" rel="stylesheet">  
+    <title>Blackbox Cinéma</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#"><img src="img/logo/logo_blackboxnoir.png" alt="Logo Cinéma" /></a>
+            <p><a href="#billboard">Films à l'affiche</a></p>
+            <p><a href="#infos">Infos Pratiques</a></p>
+            <p><a href="#localisation">Où nous trouver</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <img class="logo" src="img/logo/logo_blackbox.png" alt="Logo Blackbox Cinema" />
+            <h1 class="slogan">🍿🍿Viendez chez nous, s'il vous plaît !!! Nous avons du popcorn.🍿🍿</h1>
+        </section>
+
+        <section id="billboard">
+            <h1>Films à l'affiche</h1>
+            <section class="film">
+                <h2>Terminator 2: Judgement Day</h2>
+                <img class="poster" src="img/films/terminator2.jpg" alt="Terminator 2: Judgement Day Poster">
+                <p class="filmDesc">Directed by James Cameron. With Arnold Schwarzenegger, Linda Hamilton, Edward
+                    Furlong, Robert Patrick. A cyborg, identical to the one who failed to kill Sarah Connor, must now
+                    protect her teenage son, John Connor, from a more advanced and powerful cyborg.
+                </p>
+            </section>
+
+            <section class="film">
+                <h2>Promare</h2>
+                <img class="poster" src="img/films/promare.jpg" alt="Promare Poster">
+                <p class="filmDesc">Directed by Hiroyuki Imaishi. With John Eric Bentley, Steve Blum, Johnny Yong Bosch,
+                    Melissa Fahn. A futuristic firefighting mecha service is created to protect the world.</p>
+            </section>
+
+            <section class="film">
+                <h2>Get Out</h2>
+                <img class="poster" src="img/films/getout.jpg" alt="Get Out Poster">
+                <p class="filmDesc">Directed by Jordan Peele. With Daniel Kaluuya, Allison Williams, Bradley Whitford,
+                    Catherine Keener. A young African-American visits his white girlfriend's parents for the weekend,
+                    where his simmering uneasiness about their reception of him eventually reaches a boiling point.
+                </p>
+            </section>
+        </section>
+
+        <div id="infosPadding" class="padding"></div>
+        <section id="infos">
+            <h1>Infos pratiques</h1>
+            <section id="avantages">
+                <h2>Avantages Cinéma</h2>
+                <ol>
+                    <li>Salle climatisée</li>
+                    <li>Toutes les salles en IMAX</li>
+                    <li>Son Digital Prologic Surround</li>
+                </ol>
+            </section>
+            <section id="tarifs">
+                <h2>Tableau tarifs</h2>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th colspan="2">Lundi au Vendredi</th>
+                        <th rowspan="2">Weekend</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>de 9h à 18h</td>
+                        <td>soirée</td>
+                    </tr>
+                    <tr>
+                        <th>-14 ans</th>
+                        <td>5&euro;</td>
+                        <td>6&euro;</td>
+                        <td>6&euro;</td>
+                    </tr>
+                    <tr>
+                        <th>Plein tarif</th>
+                        <td>10&euro;</td>
+                        <td>12&euro;</td>
+                        <td>12,5&euro;</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+
+        <section id="localisation">
+            <h1>Où nous trouver ?</h1>
+            <address>
+                <h2>Notre adresse : </h2>
+                <p>245 Rue Tartempion 34000 Montpellier</p>
+                <p>01.23.45.67.89</p>
+            </address>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303730.1933872434!2d-169.6506671931015!3d16.751498237093415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1eb1c526a3005d%3A0x472f001a195af9d8!2sJohnston%20Island%20National%20Wildlife%20Refuge%2C%20%C3%8Eles%20mineures%20%C3%A9loign%C3%A9es%20des%20%C3%89tats-Unis!5e1!3m2!1sfr!2sfr!4v1572443424349!5m2!1sfr!2sfr"
+                    frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
+        </section>
+
+        <section id="contactPadding" class="padding"></section>
+        <section id="contact">
+            <h1>Nous contacter</h1>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <input type="text" name="lastName" id="formLastName" placeholder="NOM" />
+                    <input type="text" name="firstName" id="formFirstName" placeholder="PRÉNOM" />
+                </fieldset>
+                <fieldset>
+                    <input type="email" name="email" id="formEmail" placeholder="EMAIL" />
+                    <input type="tel" name="tel" id="formTel" placeholder="TÉLÉPHONE" />
+                </fieldset>
+                <input type="text" name="topic" id="formTopic" placeholder="SUJET DU MESSAGE" />
+                <textarea name="msg" id="formMsg" cols="30" rows="10" placeholder="Contenu de votre message..."></textarea>
+                <input type="submit" value="Envoyer" id="formSubmit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section id="social">
+            <div id="newsletter">
+                <p>Inscrivez-vous à notre newsletter pour qu'on puisse vendre votre email à des entreprises tierces !</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta illo quibusdam obcaecati magni harum fuga, soluta quam porro vero veritatis corporis ut quidem, ipsa temporibus qui, sint numquam quasi?</p>
+            </div>
+            <div id="socialNetworks">
+                <p>Suivez nous sur touitar et faissbouc pour vous faire brainwasher !</p>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/social/f_logo_RGB-Hex-Blue_512.png" alt="Facebook Logo" /></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="img/social/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter logo"></a>
+           </div>
+        </section>
+        <section id="legal">
+            <p>Mentions légales</p>
+        </section>
+    </footer>
+</body>
+
+</html>

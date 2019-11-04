@@ -1,0 +1,338 @@
+/** -------------- GENERAL -------------- **/
+* {
+    font-family: 'Muli', Arial, sans-serif;
+    font-size:1rem;
+    box-sizing: border-box;
+}
+
+a {
+    color:#501818;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    align-self:flex-start;
+    width:100%;
+}
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size:2.5rem;
+    margin: 0;
+    border-bottom: 2px dotted goldenrod;
+}
+
+h2 {
+    font-size:1.5rem;
+}
+
+h3 {
+    font-size:1.2rem;
+}
+
+body {
+    background-color: #211103; /*#313131;*/
+    /* width: 80%; */
+    margin:auto;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, .9);
+}
+
+main > section {
+    height: 85vh;
+    padding:1rem;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    /* align-content: flex-start; */
+    align-items: center;
+}
+
+table * {
+    padding:0.7rem;
+    text-align: center;
+    empty-cells: hide;
+}
+
+th {
+    background-color:#6c1111;
+    color:white;
+}
+
+td {
+    background-color:#f0cb96;
+}
+
+form * {
+    border:none;
+}
+
+.padding {
+    height: 65vh;
+    box-shadow: inset 0px -20px 10px -10px rgba(0, 0, 0, 0.50), 
+inset 0px 20px 10px -10px rgba(0, 0, 0, 0.50);
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/* Sous-sections */
+section > section, section > iframe, section > address {
+    background-color: #fff8;
+    border-radius: 12px;
+    box-shadow: 1px 0px 10px #0003;
+    /* margin: 30px 0; */
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+
+/** --------------- Header ---------------- **/
+header {
+    background-color: #6c1111;
+}
+
+header nav {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+
+header nav > p {
+    padding:0 2rem;
+}
+
+header nav img {
+    height: 50px;
+}
+
+header nav a {
+    font-weight: bold;
+    color:#fff;
+    text-decoration: none;
+}
+
+/** -------------- Section 1 -------------- **/
+
+#welcome {
+    color: rgba(255, 255, 255, 0.8);
+    background-image: url(../img/red-seats.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome img {
+    max-width: 100%;
+}
+
+#welcome .slogan {
+    margin-bottom: 10%;
+    text-shadow: 1px 1px 4px #ea5d5d;
+    font-family: 'Cinzel', serif;
+    border:none;
+}
+
+/** -------------- Section 2 FILMS A L'AFFICHE -------------- **/
+
+#billboard {
+    background-color: #fbe6c7; /*#fbe6c7*/
+}
+
+.film {
+    width:30%;
+    height:85%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.filmDesc {
+    padding:1rem;
+    text-align: justify;
+}
+
+.poster {
+    max-height: 400px;
+}
+
+/** -------------- Section 3 INFOS PRATIQUES -------------- **/
+
+#infosPadding {
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/red-curtain3.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+#infos {
+    background-color: #fbe6c7;
+    height:55vh;
+    /* background-color: #f2ca96; */
+}
+
+#avantages, #tarifs {
+    width:40%;
+    height:80%;
+    padding:1rem;
+}
+
+/** -------------- Section 4 MAP & ADRESSE -------------- **/
+
+#localisation {
+    /* background-color: #eaeaea; */
+    background-color:#fff3e1;
+    /* #F4CB89; */
+    align-items: flex-start;
+}
+
+#localisation > * {
+    margin: 0.7rem;
+}
+
+#map {
+    width:66%;
+    height:66%;
+    max-width:600px;
+    max-height:450px;
+    min-height:300px;
+    min-width:400px;
+}
+
+#localisation address {
+    flex-flow:column nowrap;
+}
+
+address p {
+    width:100%;
+    text-align:center;
+    padding:1rem;
+}
+
+/** -------------- Section 5 FORMULAIRE CONTACT -------------- **/
+
+#contactPadding {
+    background-image:url(../img/abstract.jpg);
+}
+#contact {
+    background-color: #fbe6c7;
+    align-content: baseline;
+    flex-flow:column nowrap;
+}
+
+#contact > form {
+    display:flex;
+    flex-flow:column nowrap;
+    flex-grow:1;
+    width: 65%;
+    margin: 40px;
+}
+
+#contact fieldset {
+    display:flex;
+    flex-flow: row nowrap;
+    padding:0;
+    margin:0;
+}
+
+#contact fieldset > * {
+    width:45%;
+    flex-grow:1;
+}
+
+#contact input, #contact textarea {
+    margin:0.3rem;
+    padding:0.5rem;
+    background-color:#fff7; /* #f0cb96; */
+    border-radius: 8px;
+    border:2px solid #f0cb96;
+}
+
+#contact input {
+    font-weight: bold;
+}
+
+#contact textarea {
+    resize: none;
+    flex-grow:1;
+}
+
+#contact #formSubmit {
+    background-color:#f0cb96;
+}
+#contact #formSubmit:hover {
+    background-color:#6c1111;
+    color:white;
+}
+
+/** --------------- Footer ---------------- **/
+
+footer {
+    background-color: #6c1111; /* #8c1f1f; */
+    color:#fff9;
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+footer > *, #socialNetworks {
+    display:flex;
+    justify-content: space-evenly;
+}
+#socialNetworks {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer p {
+    margin:1.3rem;
+}
+
+#social {
+    height:300px;
+}
+#social > * {
+    width:48%
+}
+#social img {
+    max-height: 100%;
+    height:50px;
+    padding:8px;
+}
+
+#legal {
+    background-color: #211103;
+    height:80px;
+}
+
+@media screen and (max-width:960px) {
+    /** -------------- GENERAL -------------- **/
+    main > section {
+        height: auto;
+    }
+    .padding {
+        height:33vh;
+    }
+    /** -------------- Section 1 ACCUEIL -------------- **/
+    .slogan {
+        font-size:1.8rem;
+    }
+    /** -------------- Section 2 FILMS A L'AFFICHE -------------- **/
+    .film {
+        width:90%;
+        margin: 2rem 0;
+    }
+    /** -------------- Section 3 INFOS PRATIQUES -------------- **/
+    table * {
+        padding:2px;
+    }
+    #avantages, #tarifs {
+        width:47%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    /** --------------- Header ---------------- **/
+    header nav > p {
+        padding:0;
+    }
+    /** -------------- Section 1 ACCUEIL -------------- **/
+
+}
